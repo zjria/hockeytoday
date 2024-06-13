@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey To Day</title>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/multipol-use/hockey.gif" type="image/x-icon">
+    <!-- daisy ui css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Try customizing your config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    margin: {
+                        sectionMargin: "100px",
+                        sectionMarginSm: "50px",
+                        sectionMarginMd: "50px",
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Try adding some custom CSS -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="hover:bg-red-400"><a>Home</a></li>
+                        <li class="hover:bg-red-400"><a>About</a></li>
+                        <li>
+                            <details>
+                                <summary class="hover:bg-red-400">Pages</summary>
+                                <ul class="p-2 bg-slate-50 w-32">
+                                    <li><a>Pages 1</a></li>
+                                    <li><a>Pages 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="hover:bg-red-400"><a>Blog</a></li>
+                        <li class="hover:bg-red-400"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a href="index.html"> <img class="w-16" src="images/multipol-use/hockey.gif" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 items-center">
+                    <li class="hover:bg-red-400"><a>Home</a></li>
+                    <li class="hover:bg-red-400"><a>About</a></li>
+                    <li>
+                        <details>
+                            <summary class="hover:bg-red-400">Pages</summary>
+                            <ul class="p-2 bg-slate-50 w-32">
+                                <li><a>Pages 1</a></li>
+                                <li><a>Pages 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="hover:bg-red-400"><a>Blog</a></li>
+                    <li class="hover:bg-red-400"><a>Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle hover:bg-red-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+                <a class="btn ms-2 hover:bg-red-400">Button</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+
+        <!-- <div class="absolute bg-black transform -translate-y-1/2 right-20 top-2/3 p-8 w-6/12 rounded-2xl">
+            <h4 class="text-2xl text-white">Meet all the heroes from the field</h4>
+            <p class="mt-4 text-white">Celebrating the Bravery and Dedication of Our Frontline Warriors
+                From Healthcare Workers to First Responders, Get to Know the Heroes Among Us</p>
+        </div>
+        <div class="absolute flex gap-x-2 transform -translate-y-1/2 left-2 top-3/4">
+            <a href="#slide4"
+                class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❮</a>
+            <a href="#slide2"
+                class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❯</a>
+        </div> -->
+
+        <!-- Banner Section -->
+        <section class="container mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/banner/1.png" class="w-full rounded-8" />
+                    <div class="absolute flex gap-x-2 transform -translate-y-1/2 left-2 top-3/4">
+                        <a href="#slide3"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-black transform -translate-y-1/2 right-20 top-2/3 p-8 w-6/12 rounded-2xl">
+                        <h4 class="text-2xl text-white">Meet all the heroes from the field</h4>
+                        <p class="mt-4 text-white">Celebrating the Bravery and Dedication of Our Frontline Warriors
+                            From Healthcare Workers to First Responders, Get to Know the Heroes Among Us</p>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner/2.png" class="w-full" />
+                    <div class="absolute flex gap-x-2 transform -translate-y-1/2 left-2 top-3/4">
+                        <a href="#slide1"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-black transform -translate-y-1/2 right-20 top-2/3 p-8 w-6/12 rounded-2xl">
+                        <h4 class="text-2xl text-white">Meet all the heroes from the field</h4>
+                        <p class="mt-4 text-white">Celebrating the Bravery and Dedication of Our Frontline Warriors
+                            From Healthcare Workers to First Responders, Get to Know the Heroes Among Us</p>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner/3.png" class="w-full rounded-none" />
+                    <div class="absolute flex gap-x-2 transform -translate-y-1/2 left-2 top-3/4">
+                        <a href="#slide2"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle hover:bg-black hover:border-black hover:text-white">❯</a>
+                    </div>
+                    <div class="absolute bg-black transform -translate-y-1/2 right-20 top-2/3 p-8 w-6/12 rounded-2xl">
+                        <h4 class="text-2xl text-white">Meet all the heroes from the field</h4>
+                        <p class="mt-4 text-white">Celebrating the Bravery and Dedication of Our Frontline Warriors
+                            From Healthcare Workers to First Responders, Get to Know the Heroes Among Us</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- daisy ui js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
